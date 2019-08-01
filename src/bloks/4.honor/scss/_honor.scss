@@ -1,0 +1,147 @@
+$mobile-wdth: 320px;
+$tablet-wdth: 768px;
+$desktop-wdth: 1200px;
+
+.honor {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 370px;
+    text-transform: uppercase;
+
+
+    .honor__container {
+      //      margin-top: -25%;
+      margin-top: -250px;
+      position: relative;
+      padding: 215px 40px 35px;
+      border: 15px solid #000;
+
+      h2 {
+        font-size: 250px;
+        color: #000;
+        margin: 0;
+        position: absolute;
+        transform: translate(110%, 22%);
+        bottom: 0;
+        right: 0;
+      }
+      
+      h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 100px;
+        letter-spacing: 1px;
+        text-align: right;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+        text-align: right;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(-45%, 45%);
+      }
+    }
+  }
+
+
+                          //Tablet version
+
+@media (min-width: $tablet-wdth) and (max-width: $desktop-wdth) {
+  
+  .honor {
+    margin-bottom: 200px;
+
+
+    .honor__container {
+      margin-top: -140px;
+      padding: 110px 20px 25px;
+      min-width: 376px;
+      border: 12px solid #000;
+
+      h2 {
+        font-size: 200px;
+        transform: translate(110%, 22%);
+      }
+      
+      h3 {
+        font-size: 70px;
+      }
+
+      p {
+       font-size: 20px;
+      }
+
+      img {
+        width: 235px;
+        height: 200px;
+        transform: translate(-25%, 50%);
+      }
+    }
+  }
+  
+}
+
+
+                         //Mobile version
+
+@media (min-width: $mobile-wdth) and (max-width: $tablet-wdth) {
+
+  .honor {
+    margin-bottom: 130px;
+    padding: 30px 4% 0;
+    justify-content: flex-start;
+    
+    .honor__container {
+      margin: 0 auto;
+      max-width: 300px;
+      padding: 20px 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border: 5px solid #000;
+
+      img {
+        width: 160px;
+        height: 140px;
+        top: 0;
+        transform: translate(-13%, -15%);
+      }
+    
+      h2 {
+        margin: 0;
+        position: static;
+        font-size: 150px;
+        height: 140px;
+        text-align: right;
+        color: #000;
+        transform: translate(-8%, -17%);
+      }
+
+        h3 {
+          font-size: 37px;
+          text-align: right;
+          width: 100%;
+          margin-bottom: 33px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 110px;
+          text-align: left;
+        }
+
+      }
+    }
+  }
+  

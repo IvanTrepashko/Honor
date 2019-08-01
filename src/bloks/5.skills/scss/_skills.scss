@@ -1,0 +1,352 @@
+$main-color: #ffa800;
+$mobile-wdth: 320px;
+$tablet-wdth: 768px;
+$desktop-wdth: 1200px;
+
+.visually-hidden {
+  display: none;
+}
+
+.skills {
+  position: relative;
+  padding: 0 5%;
+}
+
+.frame {
+  
+  .frame-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    h2 {
+      align-self: flex-end;
+      font-size: 220px;
+      color: #000;
+      margin: 0;
+    }
+    
+    .photo {
+      position: relative;
+      margin-right: 190px;
+      width: 380px;
+      height: 380px;
+      border: 12px solid #000;
+      margin-bottom: 140px;
+    
+      img.skills-photo-active {
+        position: absolute;
+        top: 9%;
+        left: 5%;
+        width: 510px;
+        height: 310px;
+      }
+    }
+    
+  }
+}
+
+.box {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 340px;
+  height: 140px;
+  background-color: #694fca;
+  padding: 20px;
+  
+  .box-container {
+    position: relative;
+    
+    .box-title {
+      color: $main-color;
+      font-size: 40px;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .box-text {
+      color: #fff;
+      font-size: 15px;
+      margin: 0;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+
+    .box-cross {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+
+    } 
+  }
+}
+
+.services {
+    width: 470px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+  
+  .services-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    
+    .services-item {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      list-style: none;
+      width: 235px;
+      margin-bottom: 55px;
+      
+      p {
+        text-transform: uppercase;
+        font-size: 25px;
+        margin: 0;
+        margin-left: 20px;
+      }
+      
+      img {
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+}
+
+
+                          //Tablet version
+
+@media (min-width: $tablet-wdth) and (max-width: $desktop-wdth) {
+  
+    .skills {
+  position: static;
+  padding: 0 4%;
+}
+
+.frame {
+  
+  .frame-container {
+    margin: 0 auto 90px;
+    position: relative;
+       width: 400px;
+    
+    h2 {
+      align-self: flex-end;
+      font-size: 200px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(54%, 38%);
+    }
+    
+    .photo {
+      position: static;
+      margin: 0 auto;
+      width: auto;
+      height: auto;
+      border: none;
+      margin-bottom: 0;
+    
+      img.skills-photo-active {
+        position: static;
+        width: 400px;
+        height: 280px;
+        padding: 10px;
+        border: 5px solid #000;
+        border-radius: 15px;
+        box-shadow: 0px 13px 30px 10px rgba(0, 0, 0, 0.47);
+      }
+    }
+    
+  }
+}
+
+.box {
+  margin: 0 auto 90px;
+  padding: 10px;
+  position: static;
+  width: 370px; 
+  height: 345px;
+  border-radius: 15px;
+  
+  .box-container {
+    position: static;
+    border: 3px solid #fff;
+    padding: 15px 45px 20px;
+    height: 300px;
+    border-radius: 15px;
+    
+    .box-title {
+      font-size: 67px;
+      margin: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .box-text {
+      font-size: 21px;
+      text-align: center;
+      margin: 0;
+      line-height: 24px;
+    }
+
+    .box-cross {
+      display: none;
+
+    } 
+  }
+}
+
+.services {
+    width: auto;
+    position: static;
+  
+  .services-list {
+    
+    .services-item {
+      width: 33%;
+      margin: 0 auto 50px;
+    }
+    
+    p {
+      font-size: 30px;
+    }
+    
+    img {
+      width: 34px;
+      height: 35px;
+    }
+  }
+  }
+  
+}
+    
+
+
+
+                      //Mobile version
+
+@media (min-width: $mobile-wdth) and (max-width: $tablet-wdth) {
+
+  .skills {
+  position: static;
+  padding: 0 4%;
+}
+
+.frame {
+  
+  .frame-container {
+    margin: 0 auto 90px;
+    position: relative;
+       width: 280px;
+    
+    h2 {
+      align-self: flex-end;
+      font-size: 120px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate( 0, 24%);
+    }
+    
+    .photo {
+      position: static;
+      margin: 0 auto;
+      width: auto;
+      height: auto;
+      border: none;
+      margin-bottom: 0;
+    
+      img.skills-photo-active {
+        position: static;
+        width: 250px;
+        height: 160px;
+        padding: 10px;
+        border: 5px solid #000;
+        border-radius: 15px;
+        box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47);
+      }
+    }
+    
+  }
+}
+
+.box {
+  margin: 0 auto 90px;
+  padding: 10px;
+  position: static;
+  width: 265px; 
+  height: 260px;
+  border-radius: 15px;
+  
+  .box-container {
+    position: static;
+    border: 3px solid #fff;
+    padding: 10px;
+    height: 230px;
+    border-radius: 15px;
+    
+    .box-title {
+      font-size: 50px;
+      margin: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .box-text {
+      font-size: 18px;
+      text-align: center;
+      margin: 0;
+      line-height: 24px;
+    }
+
+    .box-cross {
+      display: none;
+
+    } 
+  }
+}
+
+.services {
+    width: auto;
+    position: static;
+  
+  .services-list {
+    
+    .services-item {
+      width: 235px;
+      margin: 0 auto 50px;
+      
+//      p {
+//        font-size: 25px;
+//        margin: 0;
+//        margin-left: 20px;
+//      }
+//      
+//      img {
+//        width: 27px;
+//        height: 27px;
+//      }
+//
+//
+//             мб тут что-нибудь переделаю
+    }
+  }
+}
+
+
+}
