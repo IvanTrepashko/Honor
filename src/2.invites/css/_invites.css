@@ -1,0 +1,282 @@
+.invites {
+  background-color: #694fca;
+  color: #fff;
+  padding: 0 12% 70px; }
+  .invites .invites__header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 220px;
+    text-transform: uppercase; }
+    .invites .invites__header h2 {
+      font-size: 250px;
+      font-weight: 100;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: #ffa800;
+      margin: 0;
+      -webkit-transform: translate(-115%, 20%);
+      -ms-transform: translate(-115%, 20%);
+      transform: translate(-115%, 20%);
+      font-weight: 100; }
+
+.invites__container {
+  margin-top: -330px;
+  position: relative;
+  padding: 310px 40px 35px;
+  border: 15px solid #fff; }
+  .invites__container h3 {
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0; }
+  .invites__container p {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0px; }
+  .invites__container img {
+    position: absolute;
+    -webkit-transform: translate(50%, 32%);
+    -ms-transform: translate(50%, 32%);
+    transform: translate(50%, 32%);
+    bottom: 0;
+    right: 0; }
+
+.advanteges {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .advanteges .advanteges__text {
+    margin-bottom: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .advanteges .advanteges__text h3 {
+      font-size: 100px;
+      letter-spacing: 2px;
+      margin: 0;
+      padding: 0;
+      margin-right: 225px;
+      max-width: 380px; }
+    .advanteges .advanteges__text p {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+      line-height: 45px;
+      max-width: 520px; }
+  .advanteges .advanteges__container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3; }
+    .advanteges .advanteges__container h4 {
+      text-transform: uppercase;
+      color: #ffa800;
+      font-size: 30px;
+      font-weight: 100;
+      margin: 0;
+      padding: 0; }
+    .advanteges .advanteges__container h4:after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 1px;
+      margin: 18px 0 25px;
+      background-color: #fff; }
+    .advanteges .advanteges__container p {
+      line-height: 45px;
+      font-size: 18px;
+      font-weight: 100;
+      margin: 0;
+      padding: 0; }
+    .advanteges .advanteges__container .advanteges__img {
+      width: 34px;
+      margin-bottom: 15px; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .invites {
+    padding: 0 8% 70px; }
+  .invites__header {
+    margin-bottom: 130px; }
+    .invites__header h2 {
+      font-size: 200px;
+      -webkit-transform: translate(-105%, 20%);
+      -ms-transform: translate(-105%, 20%);
+      transform: translate(-105%, 20%); }
+  .invites__container {
+    margin-top: -170px;
+    padding: 160px 20px 15px;
+    border: 12px solid #fff; }
+    .invites__container h3 {
+      font-size: 70px; }
+    .invites__container p {
+      font-size: 20px; }
+    .invites__container img {
+      width: 235px;
+      height: 200px;
+      -webkit-transform: translate(60%, 55%);
+      -ms-transform: translate(60%, 55%);
+      transform: translate(60%, 55%); }
+  .advanteges .advanteges__text {
+    margin-bottom: 130px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .advanteges .advanteges__text h3 {
+      margin: 0 auto 15px;
+      font-size: 70px;
+      letter-spacing: 1.5px;
+      max-width: 100%; }
+    .advanteges .advanteges__text p {
+      text-align: center;
+      font-size: 27px;
+      line-height: 35px;
+      max-width: 100%; }
+  .advanteges .advanteges__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .advanteges .advanteges__container .advanteg {
+      margin: 0 auto 40px;
+      padding: 10px 15px 20px;
+      width: 260px;
+      border: 5px solid #fff;
+      border-radius: 15px;
+      -webkit-box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47);
+      box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47); }
+    .advanteges .advanteges__container h4 {
+      font-size: 40px;
+      text-align: center; }
+    .advanteges .advanteges__container h4:after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 2px;
+      margin: 30px auto 30px; }
+    .advanteges .advanteges__container p {
+      line-height: 35px;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      text-align: center; }
+    .advanteges .advanteges__container .advanteges__img {
+      width: 38px;
+      margin: 16px auto 20px;
+      display: block; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .invites {
+    padding: 30px 4% 70px; }
+    .invites .invites__header {
+      margin-bottom: 100px; }
+      .invites .invites__header .invites__container {
+        padding: 0;
+        margin-top: 0;
+        max-width: 350px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        border: 5px solid #fff; }
+        .invites .invites__header .invites__container h2 {
+          position: static;
+          display: inline-block;
+          margin-left: 30px;
+          -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+          font-size: 150px; }
+        .invites .invites__header .invites__container h3 {
+          margin: 0;
+          margin-bottom: 20px;
+          font-size: 45px;
+          width: 150px; }
+        .invites .invites__header .invites__container p {
+          font-size: 20px;
+          width: 100px;
+          padding-top: 25px; }
+        .invites .invites__header .invites__container img {
+          position: static;
+          width: 170px;
+          height: 145px;
+          -webkit-transform: translate(9%, 15%);
+          -ms-transform: translate(9%, 15%);
+          transform: translate(9%, 15%); }
+  .advanteges .advanteges__text {
+    margin-bottom: 105px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .advanteges .advanteges__text h3 {
+      font-size: 60px;
+      text-align: center;
+      letter-spacing: 2.5px;
+      margin: 0 auto 100px;
+      max-width: 100%; }
+    .advanteges .advanteges__text p {
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 23px;
+      line-height: 30px;
+      text-align: center; }
+  .advanteges .advanteges__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .advanteges .advanteges__container .advanteg {
+      margin: 0 auto 40px;
+      width: 260px;
+      border: 5px solid #fff;
+      padding: 10px 15px 20px;
+      border-radius: 15px;
+      -webkit-box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47);
+      box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47); }
+    .advanteges .advanteges__container h4 {
+      font-size: 36px;
+      text-align: center; }
+    .advanteges .advanteges__container h4:after {
+      content: "";
+      display: block;
+      width: 65px;
+      height: 2px;
+      margin: 20px auto 25px; }
+    .advanteges .advanteges__container p {
+      line-height: 35px;
+      letter-spacing: 2.5px;
+      font-size: 25px;
+      text-align: center; }
+    .advanteges .advanteges__container .advanteges__img {
+      width: 38px;
+      margin: 16px auto 20px;
+      display: block; } }

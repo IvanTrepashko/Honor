@@ -1,0 +1,346 @@
+$main-color: #ffa800;
+$mobile-wdth: 320px;
+$tablet-wdth: 768px;
+$desktop-wdth: 1200px;
+
+.invites {
+  background-color: #694fca;
+  color: #fff;
+  padding: 0 12% 70px;
+
+  .invites__header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 220px;
+    text-transform: uppercase;
+
+    h2 {
+      font-size: 250px;
+      font-weight: 100;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: #ffa800;
+      margin: 0;
+      transform: translate(-115%, 20%);
+      font-weight: 100;
+    }
+  }
+}
+
+.invites__container {
+  //      margin-top: -25%;
+  margin-top: -330px;
+  position: relative;
+  padding: 310px 40px 35px;
+  border: 15px solid #fff;
+
+  h3 {
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0px;
+  }
+
+  img {
+    position: absolute;
+    transform: translate(50%, 32%);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.advanteges {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .advanteges__text {
+    margin-bottom: 95px;
+    display: flex;
+
+    h3 {
+      font-size: 100px;
+      letter-spacing: 2px;
+      margin: 0;
+      padding: 0;
+      margin-right: 225px;
+      max-width: 380px;
+    }
+
+    p {
+      align-self: center;
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+      line-height: 45px;
+      max-width: 520px;
+    }
+  }
+
+  .advanteges__container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 3;
+
+    h4 {
+      text-transform: uppercase;
+      color: $main-color;
+      font-size: 30px;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+
+    h4:after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 1px;
+      margin: 18px 0 25px;
+      background-color: #fff;
+    }
+
+    p {
+      line-height: 45px;
+      font-size: 18px;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+
+    .advanteges__img {
+      width: 34px;
+      margin-bottom: 15px;
+    }
+  }
+}
+//Tablet version
+
+@media (min-width: $tablet-wdth) and (max-width: $desktop-wdth) {
+  .invites {
+    padding: 0 8% 70px;
+  }
+
+  .invites__header {
+    margin-bottom: 130px;
+
+    h2 {
+      font-size: 200px;
+      transform: translate(-105%, 20%);
+    }
+  }
+
+  .invites__container {
+    margin-top: -170px;
+    padding: 160px 20px 15px;
+    border: 12px solid #fff;
+
+    h3 {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    img {
+      width: 235px;
+      height: 200px;
+      transform: translate(60%, 55%);
+    }
+  }
+
+  .advanteges {
+    .advanteges__text {
+      margin-bottom: 130px;
+      flex-wrap: wrap;
+
+      h3 {
+        margin: 0 auto 15px;
+        font-size: 70px;
+        letter-spacing: 1.5px;
+        max-width: 100%;
+      }
+
+      p {
+        text-align: center;
+        font-size: 27px;
+        line-height: 35px;
+        max-width: 100%;
+      }
+    }
+
+    .advanteges__container {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .advanteg {
+        margin: 0 auto 40px;
+        padding: 10px 15px 20px;
+        width: 260px;
+        border: 5px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47);
+      }
+
+      h4 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      h4:after {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 2px;
+        margin: 30px auto 30px;
+      }
+
+      p {
+        line-height: 35px;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .advanteges__img {
+        width: 38px;
+        margin: 16px auto 20px;
+        display: block;
+      }
+    }
+  }
+}
+
+//Mobile version
+
+@media (min-width: $mobile-wdth) and (max-width: $tablet-wdth) {
+  .invites {
+    padding: 30px 4% 70px;
+
+    .invites__header {
+      margin-bottom: 100px;
+
+      .invites__container {
+        padding: 0;
+        margin-top: 0;
+        max-width: 350px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 5px solid #fff;
+
+        h2 {
+          position: static;
+          display: inline-block;
+          margin-left: 30px;
+          transform: translate(0%, 0%);
+          font-size: 150px;
+        }
+
+        h3 {
+          margin: 0;
+          margin-bottom: 20px;
+          font-size: 45px;
+          width: 150px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 100px;
+          padding-top: 25px;
+        }
+
+        img {
+          position: static;
+          width: 170px;
+          height: 145px;
+          transform: translate(9%, 15%);
+        }
+      }
+    }
+  }
+
+  .advanteges {
+    .advanteges__text {
+      margin-bottom: 105px;
+      flex-wrap: wrap;
+
+      h3 {
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: 2.5px;
+        margin: 0 auto 100px;
+        max-width: 100%;
+      }
+
+      p {
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .advanteges__container {
+      flex-wrap: wrap;
+
+      .advanteg {
+        margin: 0 auto 40px;
+        width: 260px;
+        border: 5px solid #fff;
+        padding: 10px 15px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.47);
+      }
+
+      h4 {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      h4:after {
+        content: "";
+        display: block;
+        width: 65px;
+        height: 2px;
+        margin: 20px auto 25px;
+      }
+
+      p {
+        line-height: 35px;
+        letter-spacing: 2.5px;
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .advanteges__img {
+        width: 38px;
+        margin: 16px auto 20px;
+        display: block;
+      }
+    }
+  }
+}
